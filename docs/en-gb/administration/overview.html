@@ -4,33 +4,44 @@ title: "Admin Interface - OpenCart Documentation"
 permalink: en-gb/administration/
 ---
 <h1>Admin Interface</h1>
-<h2>Connecting the OpenCart administration</h2>
-<p>OpenCart&#39;s administration side of the store is where you can modify features, upload images, add products, keep track of customers, manage payments, and much more. Customization in the admin affects how the customer will interact with a store: by modifying the look, structure, and content of the store front.</p>
-<h2>Accessing the admin panel</h2>
-<p>To access the admin panel, type in location of the store into the web browser followed by &quot;/admin&quot;. For example, if your store is located at &quot;www.chocolatechip.com&quot;, your admin panel is located at &quot;www.chocolatechip.com/admin&quot;. Even if the store is located in a sub-folder or on a sub-domain of their site, adding &quot;/admin&quot; to the end of the store&#39;s path will lead you to the administration side.</p>
-<p>If the name of the folder is changed by you during installation, the location of the admin panel is changed to that new name. For example, if the name of the admin folder is changed to admin1, the new location of the admin panel is at &quot;www.chocolatchip.com/admin1&quot;.</p>
-<div class="alert alert-success" role="alert"><i class="fa  fa-check-circle"></i> Changing the name of the admin folder to another name is important for improving an online shop&#39;s security. The config.php file needs to be edited to indicate the correct file path and location.</div>
-<p>A username and password is created in <a href="en-gb/installation/">Step 3 of the auto-installer</a> during installation. This information can now be used to fill in the administrator login details.</p>
-<p class="text-center"><img src="image/admin-interface-login.png" alt="admin interface login" class="img-thumbnail" /></p>
-<p>After filling in the correct username and password, pressing the &quot;Login&quot; button will direct you to the OpenCart dashboard. When you first login to your shop, the dashboard will be blank (as seen below), because there isn&#39;t any statistical data to be analyzed yet.</p>
-<p class="text-center"><img src="image/admin-interface-dashboard.png" alt="admin interface dashboard" class="img-thumbnail" /></p>
-<h2>Entering the administration through the Dashboard</h2>
-<p>The dashboard is the first thing you will see when entering OpenCart&#39;s admin. The main function of the dashboard is to give the shop owner an overview of how the shop is performing. There are 3 sections of the dashboard that can help you understand the statistical data collected by your store:</p>
+<p>OpenCart&apos;s administration panel is where you can modify features, upload images, add products, keep track of customers, manage payments, and much more. Customisation in the admin affects how your customer will interact with your store. You can do so by modifying the look, structure, and content of the store front.</p>
+<h2>Accessing the Admin Panel</h2>
+<p>To access the admin panel, type in your store&apos; URL into the web browser followed by &quot;/admin&quot;. For example, if your store is located at &quot;www.chocolatechip.com&quot;, your admin panel is located at &quot;www.chocolatechip.com/admin&quot;. Even if the store is located in a sub-folder or on a sub-domain of their site, adding &quot;/admin&quot; to the end of the store&apos;s path will lead you to the administration panel.</p>
+<p>If you&apos;ve changed the name of the folder after the installation, the location of the admin panel is changed to that new name. For example, if the name of the admin folder is changed to &quot;mysecretadmin&quot;, the new location of the admin panel is at &quot;www.chocolatchip.com/mysecretadmin&quot;.</p>
+<div class="alert alert-success" role="alert"><i class="fa  fa-check-circle"></i> Changing the name of the admin folder to another name is important to improve your online store&apos;s security. See <a href="en-gb/administration/security/">Basic Security Practices</a> for more information.</div>
+<p>A username and password was created during <a href="en-gb/installation/">Step 3</a> of the installation. This information can now be used to fill in the administrator login details.</p>
+<img src="image/administration/admin-interface-login.png" alt="Admin Login Interface" class="img-thumbnail" />
+<p><small>OpenCart store admin login interface.</small></p>
+<p>After filling in the correct username and password, pressing the &quot;Login&quot; button will direct you to your OpenCart dashboard. When you first login to your stop, the dashboard will be blank, because there isn&apos;t any statistical data to be shown yet.</p>
+<img src="image/administration/admin-interface-dashboard.png" alt="Admin Dashboard" class="img-thumbnail" />
+<p><small>OpenCart dashboard interface.</small></p>
+<h2>Dashboard Modules</h2>
+<p>The dashboard is the first thing you will see when you login as an admin. The main function of the dashboard is to give the store owner an overview of how the store is performing. The dashboard modules can be rearranged and configured under the <a href="en-gb/extension/dashboard">Dashboard Extensions</a> as well. Below are the initial configured dashboard modules.</p>
 <ul>
-  <li><strong>Overview:</strong>
-    <p>There are four chart showing the status of your website. They are Total Orders, Total sales, Total Customers and People Online which help you to easier to know the analytics.</p>
+  <li><strong>Total Orders</strong>
+    <p>This displays the total orders for the store.</p>
   </li>
-  <li><strong>World Map:</strong>
-    <p>A world map to show where the orders from your website were coming from.</p>
+  <li><strong>Total Sales</strong>
+    <p>This displays the total sales for the store.</p>
   </li>
-    <li><strong>Sales Analytics:</strong>
-    <p>A graph is provided to track the chronological progress of the store relative to the amount of orders and customers over time. The x value is time; which can be hours, days, or months depending on the range selected. The y value displays the number of total orders(yellow) and total customers(blue).</p>
+  <li><strong>Total Customers</strong>
+    <p>This displays the total customers for the store.</p>
   </li>
-    <li><strong>Recent Activity:</strong>
-    <p>A section to check the recent activity from any customer from your store such as login, creating account or placing new orders.</p>
+  <li><strong>People Online</strong>
+    <p>This displays the current number of visitors on your website.</p>
   </li>
-  <li><strong>Latest Orders:</strong>
-    <p>A list that displays the last orders and their details (&quot;Order ID&quot;, &quot;Customer&quot;, &quot;Status&quot;, &quot;Date Added&quot;, &quot;Total&quot;, and &quot;Action&quot;)</p>
+  <li><strong>World Map</strong>
+    <p>The world map displays the geographic location for all your orders.</p>
+  </li>
+    <li><strong>Sales Analytics</strong>
+    <p>A graph is provided to track the chronological progress of the store relative to the amount of orders and customers over time. The X axis is time, which can be hours, days, or months depending on the range selected. The Y axis displays the number of total orders and total customers.</p>
+  </li>
+    <li><strong>Recent Activity</strong>
+    <p>The recent activities from yours customers on your store such as login, creating account or placing new orders is displayed here.</p>
+  </li>
+  <li><strong>Latest Orders</strong>
+    <p>This displays the recent orders and some of their order information.</p>
   </li>
 </ul>
-<p>Above the dashboard in the top menu is the administration navigation. You can navigate between the &quot;Catalog&quot;, &quot;Extensions&quot;, &quot;Sales&quot;, &quot;System&quot;, &quot;Reports&quot;, and &quot;Help&quot;. These sections will be explained in further detail in the following sections of the User Guide.</p>
+<h2>Admin Navigation</h2>
+<p>The administration navigation is located at the side of your admin panel. You can navigate between the various configurations and pages of the admin using the menu. These configurations will be explained in the subsequent sections of the User Guide.</p>
