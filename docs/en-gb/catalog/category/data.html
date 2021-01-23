@@ -4,21 +4,49 @@ title: "Category Data - OpenCart Documentation"
 permalink: en-gb/catalog/category/data/
 ---
 <h1>Category Data</h1>
-<h2>Data Tab</h2>
-<p>The Data tab asks for the following data:</p>
-<ul>
-  <li><strong>Parent Category</strong>: Categories are arranged in a hierarchical structure; with the parent category always on top. You may choose to create a category under a parent category, turning it into a sub-category. In the category list the category will be displayed as &quot;Parent Category &gt; Sub-Category&quot;. If &quot;None&quot; is selected, the category created will be a parent category.</li>
-  <li><strong>Filters</strong>: Map any pre-created <a href="en-gb/catalog/filter/">filters </a>to a category. See Filter for more information on how filters work.</li>
-  <li><strong>Stores</strong>: If you are managing more than one store with OpenCart, you may check which stores you would like to add this category to. If only one store is available, &quot;Default&quot; may be checked. See <a href="en-gb/administration/multi-store/">Creating a multi-store</a> for more information about multi-stores.</li>
-  <li><strong>SEO keyword</strong>: A keyword that will be included in the category url for search engine optimization.</li>
-  <li><strong>Image</strong>: Select the main image for the product page and the thumbnail for product listings. See <a href="en-gb/administration/image-manager/">Image manager</a> for more information on how to upload an image using the image manager tool.</li>
-  <li><strong>Top</strong>: Checking this section will display this category in the top menu of every page. If no selection is made, it will not be displayed.
-    <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> The top menu only displays parent categories. If this category is a sub-category, it will not be displayed in the top menu.</div>
-  </li>
-  <li><strong>Columns</strong>: This number controls how many sub-categories are displayed when selecting the parent category.
-    <div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> Shop owners with many product sub-categories may need to pay special attention to how many columns are allowed. If all the available sub-categories are allowed for a product category, the entire store page in the store front will be filled with sub-categories when hovered over.</div>
-  </li>
-  <li><strong>Sort Order</strong>: This sort order determines the position of the category in the menu. A sorting order of 1 would be displayed before a sorting order of 2, 3, and so on.</li>
-  <li><strong>Status</strong>: Selecting &quot;enabled&quot; makes the category publicly available in the store front. Selecting &quot;disabled&quot; will hide the category from the store front, but will still be available for editing purposes in the administration.</li>
-</ul>
-<p class="text-center"><img src="image/catalog-categories-data.png" alt="category data" class="img-thumbnail" /></p>
+<p>The Data tab asks for certain technical information. These fields are explained below.</p>
+<table class="table table-bordered">
+  <tbody><tr>
+    <th width="30%">Parent Category</th>
+    <td width="*">This is used to specify the parent category for this category. This would then form a parent - child relationship of this category and would be displayed under its parent. However, if this field is left empty, the category becomes a parent category itself.</td>
+  </tr>
+  <tr>
+    <th>Filters</th>
+    <td>Map any pre-created filters to a category. See <a href="en-gb/catalog/filter">Filter</a> for more information on how filters work.</td>
+  </tr>
+  <tr>
+    <th>Stores</th>
+    <td>If you are managing more than one store with OpenCart, you may check which stores you would like to add this category to. If only one store is available, "Default" may be checked. See <a href="en-gb/administration/multi-store/">Creating a Multi-store</a> for more information about multi-stores.</td>
+  </tr>
+  <tr>
+    <th>Image</th>
+    <td>This allows you to upload an image related to the category so that your customers can easily understand and identify the category.</td>
+  </tr>
+  <tr>
+    <th>Top</th>
+    <td>This allows you to specify whether this category should be displayed in the top menu of your store front.
+      <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> The top menu only displays parent categories. If this category is a sub-category, it will not be displayed in the top menu.</div>
+    </td>
+  </tr>
+  <tr>
+    <th>Columns</th>
+    <td>This allows you to specify the number of columns to be used to display the child categories in the drop down menu.
+      <div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle"></i> Shop owners with many product sub-categories may need to pay special attention to how many columns are allowed. If all the available sub-categories are allowed for a product category, the entire store page in the store front will be filled with sub-categories when hovered over.</div>
+    </td>
+  </tr>
+  <tr>
+    <th>Sort Order</th>
+    <td>This allows you to specify the position of the category displayed on the menu. The value &quot;1&quot; would take precedence as compared to the values &quot;2&quot; or &quot;3&quot;.</td>
+  </tr>
+  <tr>
+    <th>Status</th>
+    <td>Selecting &quot;enabled&quot; makes the category publicly available in the store front. Selecting &quot;disabled&quot; will hide the category from the store front, but will still be available for editing purposes in the administration.</div>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="hints">* Required field</td>
+  </tr>
+</tbody>
+</table>
+<p class="text-center"><img src="image/catalog/category-add-data.png" alt="Category Data Tab" class="img-thumbnail" /></p>
+<p class="text-center"><small>The category data tab.</small></p>
