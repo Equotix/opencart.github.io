@@ -1,32 +1,117 @@
 ---
 layout: default
-title: "Products Data - OpenCart Documentation"
+title: "Product Data - OpenCart Documentation"
 permalink: en-gb/catalog/product/data/
 ---
-<h1>Products Data</h1>
-<h2>Data Tab</h2>
-<p>The data tab includes all the product criteria that will be included on the product page in the store front for customers to view:</p>
-<p class="text-center"><img src="image/catalog-product-data.png" alt="adding products data" class="img-thumbnail" /></p>
-<p>Fill in the spaces above with the following information:</p>
-<ul>
-  <li><strong>Model</strong>: create a model number for the product using a combination of letters and numbers. (required)</li>
-  <li><strong>SKU (stock keeping unit)</strong>: a random code for the product.</li>
-  <li><strong>UPC (universal product code)</strong>: the product&#39;s unique barcode.</li>
-  <li><strong>Location</strong>: where the product is located.</li>
-  <li><strong>Price</strong>: set a price for the product.</li>
-  <li><strong>Tax Class</strong>: select a tax class category on this product that was made Settings &gt; Localisation &gt; Tax Classes. This will apply the tax in the checkout for the product. Select &quot;None&quot; if taxes will not be applied to this product.</li>
-  <li><strong>Quantity</strong>: The total amount available in the store for this specific product.</li>
-  <li><strong>Minimum Quantity</strong>: the minimum amount of product a customer must reach to add that product to their Shopping Cart.</li>
-  <li><strong>Subtract Stock</strong>: &quot;Yes&quot; will subtract stock from the quantity of the product (Ex: If there are 100 computers, and a customer buys 2 computers, Subtract Stock will change the quantity to 98).</li>
-  <li><strong>Out of Stock Status</strong>: select &quot;Out of Stock&quot;, &quot;In Stock&quot;, &quot;2-3 days&quot;, or &quot;Preorder&quot; as the message shown on the product page when the product&#39;s quantity reaches 0.</li>
-  <li><strong>Requires Shipping</strong>: If the product requires shipping, select &quot;Yes&quot;. If not, select &quot;No&quot;.</li>
-  <li><strong>SEO keyword</strong>: create a keyword for search engine optimization of this product. It will be seen in the URL of the product page. Therefore, the keyword created must be unique for every product.</li>
-  <li><strong>Image</strong>: clicking &quot;Browse Folders&quot; will lead the administrator to the <a href="en-gb/administration/image-manager/">Image manager</a> to upload a new image.</li>
-  <li><strong>Date Available</strong>: the date when this product will become available for purchase.</li>
-  <li><strong>Dimensions</strong>: enter the length by width by height of the product if there are dimensions to include.</li>
-  <li><strong>Length Class</strong>: determines the metric units for the dimensions above.</li>
-  <li><strong>Weight</strong>: Enter a number for the weight.</li>
-  <li><strong>Weight Class</strong>: Specify the units of weight for the number entered into &quot;Weight&quot;.</li>
-  <li><strong>Status</strong>: Enabling makes the product publicly available in the store. Disabling allows the product to be edited in the administration , but hides it from the store front .</li>
-  <li><strong>Sort Order</strong>: When the product is sorted in a list, a number assigns it a priority. A product with a sorting order or 2 will be placed higher than a product with a sorting order of 3, but lower than a product with a sorting order of 1.</li>
-</ul>
+<h1>Product Data</h1>
+<p>The data tab includes more technical data about the product. The fields are further explained below.</p>
+<table class="table table-bordered">
+  <tbody>
+    <tr>
+      <th colspan="2">Model</th>
+    </tr>
+    <tr>
+      <th width="30%">Model *</th>
+      <td width="*">This allows you to create a model code for your product using combinations of letters and numbers. This model number need not be unique across all your products.</td>
+    </tr>
+    <tr>
+      <th>SKU</th>
+      <td>Stock Keeping Unit. A random code for your products.</td>
+    </tr>
+    <tr>
+      <th>UPC</th>
+      <td>Universal Product Code.</td>
+    </tr>
+    <tr>
+      <th>EAN</th>
+      <td>European Article Number.</td>
+    </tr>
+    <tr>
+      <th>JAN</th>
+      <td>Japanese Article Number.</td>
+    </tr>
+    <tr>
+      <th>ISBN</th>
+      <td>International Standard Book Number.</td>
+    </tr>
+    <tr>
+      <th>MPN</th>
+      <td>Manufacturer Part Number.</td>
+    </tr>
+    <tr>
+      <th>Location</th>
+      <td>This is to specify where the product is located at.</td>
+    </tr>
+    <tr>
+      <th colspan="2">Price</th>
+    </tr>
+    <tr>
+      <th>Price</th>
+      <td>This is used to indicate the amount which you are selling the product for in the default store currency.</td>
+    </tr>
+    <tr>
+      <th>Tax Class</th>
+      <td>This is used to indicate if any taxes should apply to this product. Taxes can be managed under the store&apos;s <a href="en-gb/system/localisation/tax/">Tax</a> page.</td>
+    </tr>
+    <tr>
+      <th colspan="2">Stock</th>
+    </tr>
+    <tr>
+      <th>Quantity</th>
+      <td>This is used to specify the amount of stock which is available for this product.</td>
+    </tr>
+    <tr>
+      <th>Minimum Quantity</th>
+      <td>This is used to indicate the minimum quantity that a customer has to purchase for each checkout.</td>
+    </tr>
+    <tr>
+      <th>Subtract Stock</th>
+      <td>This is to indicate whether the quantity should be deducted each time a customer makes an order.</td>
+    </tr>
+    <tr>
+      <th>Out of Stock Status</th>
+      <td>This is used to specify a message to display on the product page when the quantity reaches 0 or less. You can configure the available stock statuses under the store&apos;s <a href="en-gb/system/localisation/stock-status/">Stock Statuses</a> page.</td>
+    </tr>
+    <tr>
+      <th>Date Available</th>
+      <td>This is used to specify the starting date which the product will be made available for your customers to purchase on the store.</td>
+    </tr>
+    <tr>
+      <th colspan="2">Specification</th>
+    </tr>
+    <tr>
+      <th>Requires Shipping</th>
+      <td>This is used to specify if shipping is required for the product. This will allow you to collect the delivery address and enable the shipping methods on the checkout page if it is set to &quot;Yes&quot;.</td>
+    </tr>
+    <tr>
+      <th>Dimensions</th>
+      <td>This is used to specify the size of the product, which may be used by certain shipping modules to calculate the shipping cost.</td>
+    </tr>
+    <tr>
+      <th>Length Class</th>
+      <td>This is used to indicate the metric units used for the measurements above.</td>
+    </tr>
+    <tr>
+      <th>Weight</th>
+      <td>This is used to specify how heavy the product is, which may be used by certain shipping modules to calculate the shipping cost.</td>
+    </tr>
+    <tr>
+      <th>Weight Class</th>
+      <td>This is used to indicate the metric units used for the weight above.</td>
+    </tr>
+    <tr>
+      <th>Status</th>
+      <td>This allows you to specify if the product is enabled or disabled for purchase on the store front.</td>
+    </tr>
+    <tr>
+      <th>Sort Order</th>
+      <td>This allows you to specify the position of the product displayed on the store front. The value &quot;1&quot; would take precedence as compared to the values &quot;2&quot; or &quot;3&quot;.
+      <div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> Leaving &quot;Sort Order&quot; blank will organise the products in alphabetical order.</div></td>
+    </tr>
+    <tr>
+      <td colspan="2" class="hints">* Required field</td>
+    </tr>
+  </tbody>
+</table>
+<p class="text-center"><img src="image/catalog/product/product-add-data.png" alt="Product Data Tab" class="img-thumbnail" /></p>
+<p class="text-center"><small>The product data tab.</small></p>
