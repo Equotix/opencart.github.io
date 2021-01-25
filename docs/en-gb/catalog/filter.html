@@ -1,57 +1,52 @@
 ---
 layout: default
-title: "Filter - OpenCart Documentation"
+title: "Filters - OpenCart Documentation"
 permalink: en-gb/catalog/filter/
 ---
-<h1>Filter</h1>
-<p>This function can be found on <strong>Categories</strong> and <strong>Products</strong> pages when create or edit on <strong>Data</strong> tab.</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/EgctMTD8yOI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-<p>Default system does not include any data on filter, that's why no data popup on the field.</p>
-<p class="text-center"><img src="image/catalog/filter/filter-list.png" alt="Filter List" class="img-thumbnail" /></p>
-<p>Open the left menu in <strong>Catalog</strong> and click the <strong>Filters</strong> on row four. There is the empty list on the figure, click the <strong>create</strong> button to next page.</p>
-
-<p class="text-center"><img src="image/catalog/filter/filter-info.png" alt="Filter Info" class="img-thumbnail" /></p>
-<p>Get into the info page, there are part of fields are requested:</p>
-
-<h4>Filter Group</h4>
+<h1>Filters</h1>
+<p>Filters allow customers to filter the products in a more organised way when they are viewing the products at the store front. It will list the filters which you have created for them to select from.</p>
+<h2>Filters Listing Page</h2>
+<p>You can view all the available filters in the Filters page under the Catalog menu. Once you are ready to create a new filter group, you can click on the &quot;Add New&quot; button at the top right of the page.</p>
+<img src="image/catalog/filter/filter-list.png" alt="Filters Listing Page" class="img-thumbnail" />
+<p class="text-center"><small>The page displaying the available filters.</small></p>
+<h2>Creating a Filter</h2>
+<p>You will be presented with a page for you to create your filter group and the available values that belongs to the group on this page. For example, if a customer is looking for clothes on your store that is red in colour, he can easily filter for products with the filter tag &quot;Red&quot; assigned to it when you have the filter setup properly. The available fields are explained below.</p>
 <table class="table table-bordered">
-	<tbody><tr>
-		<th width="30%">Filter Group Name *</th>
-		<td width="*">Name of filter group</td>
-	</tr>
+  <tbody>
   <tr>
-		<th>Sort Order</th>
-		<td>It will affect the filter groups sorting on store front. Can leave it blank or type 0 on it.</td>
-	</tr>
+    <th colspan="2" class="text-center">Filter Group</th>
+  </tr>
   <tr>
-		<td colspan="2" class="hints">* Field is requested, cannot blank and submit</td>
-	</tr>
-</tbody></table>
-
-<h4>Filter Values</h4>
-<table class="table table-bordered">
-	<tbody><tr>
-		<th width="30%">Filter Name *</th>
-		<td width="*">Name of filter value</td>
-	</tr>
-	<tr>
-		<th>Sort Order</th>
-		<td>It will affect the values sorting in the group on store front. Can leave it blank or type 0 on it.</td>
-	</tr>
-	<tr>
-		<td colspan="2" class="hints">* Field is requested, cannot blank and submit</td>
-	</tr>
-</tbody></table>
-
-<h3>Edit Category</h3>
-<p class="text-center"><img src="image/catalog/filter/category-filters.png" alt="Category Filters" class="img-thumbnail" /></p>
-<p>For example, <strong>Colours</strong> filter group is created, and edit the <strong>Desktop</strong> from categories. Add the <strong>Red</strong> and <strong>Black</strong> into this category and save changes.</p>
-
-<h3>Edit Product</h3>
-<p class="text-center"><img src="image/catalog/filter/product-filters.png" alt="Product Filters" class="img-thumbnail" /></p>
-<p>Now, edit the product which is under <strong>Desktop</strong> and add the filter <strong>Red</strong> on it and save changes.</p>
-<p>If the filters module is enabled, it will be displayed in <strong>Desktop</strong> on store front category page when it is done. For more details about layout setting please click <a href="en-gb/system/design/layout/">here</a>.</p>
-
-<h3>Store front</h3>
-<p>If the module is set on the top, the result will be same as below figure when clicking into <strong>Desktop</strong>.</p>
-<p class="text-center"><img src="image/catalog/filter/store-front-desktop-refine-search.png" alt="Store Front - Desktop Refine Search" class="img-thumbnail" /></p>
+    <th width="30%">Filter Group Name *</th>
+    <td width="*">This is the name of the filter group.</td>
+  </tr>
+  <tr>
+    <th>Sort Order</th>
+    <td>This allows you to specify the position of the filter group. The value &quot;1&quot; would take precedence as compared to the values &quot;2&quot; or &quot;3&quot;.</td>
+  </tr>
+  <tr>
+    <th colspan="2" class="text-center">Filter Values</th>
+  </tr>
+  <tr>
+    <th>Filter Name *</th>
+    <td>This is the filter value name.</td>
+  </tr>
+  <tr>
+    <th>Sort Order</th>
+    <td>This allows you to specify the position of the filter value. The value &quot;1&quot; would take precedence as compared to the values &quot;2&quot; or &quot;3&quot;.</td>
+  </tr>
+  <tr>
+    <td colspan="2" class="hints">* Required field</td>
+  </tr>
+  </tbody>
+</table>
+<img src="image/catalog/filter/filter-add.png" alt="Filter Form Page" class="img-thumbnail" />
+<p class="text-center"><small>The page for setting up a filter group.</small></p>
+<h2>Assigning to a Category</h2>
+<p>Once the filter group has been created, you need to assign the values available for use to the respective category at Catalog &gt; Categories &gt; <a href="en-gb/catalog/category/data/">Data tab</a> for it to be visible on the category page.</p>
+<h2>Assigning to a Product</h2>
+<p>You will also need to assign the filter values to the relevant product. To do that, you have to access Catalog &gt; Products &gt; <a href="en-gb/catalog/product/links/">Links tab</a> and add the filter values to the product.</p>
+<h2>Setting Up the Filter Module</h2>
+<p>For the filters to be displayed, you will need to install the <a href="en-gb/extension/module/">Filter module</a> and assign it to a layout.</p>
+<img src="image/catalog/filter/filter-module.png" alt="Filter Module on Category Page" class="img-thumbnail" />
+<p class="text-center"><small>The filter module being assigned to the category page.</small></p>
