@@ -1,8 +1,36 @@
 ---
 layout: default
-title: "Product Special - OpenCart Documentation"
+title: "Product Special Tab - OpenCart Documentation"
 permalink: en-gb/catalog/product/special/
 ---
-<h1>Product Special</h1>
-<h2>Special Tab</h2>
-<p>The Special tab is identical to the Discount tab, except that this offer will be considered a special, not a discount. Fill in the customer group, quantity, priority, price, date start, date end.</p>
+<h1>Product Special Tab</h1>
+<p>The Special tab is similar to the Discount tab, except that this is a special offer price without a need for bulk quantity purchase. The various fields are explained below.</p>
+<table class="table table-bordered">
+  <tbody>
+    <tr>
+      <th width="30%">Customer Group</th>
+      <td width="*">This is used to specify which customer group is entitled to the discount. Guest customers without a customer group will be assigned to the default customer group which is set in System &gt; Settings.</td>
+    </tr>
+    <tr>
+      <th>Priority</th>
+      <td>This is used to specify which discount would apply first if there are multiple discounts for the selected item. The priority number &quot;1&quot; will take precedence over the priority number &quot;2&quot; or &quot;3&quot;</td>
+    </tr>
+    <tr>
+      <th>Price</th>
+      <td>This is the discounted price to be used.</td>
+    </tr>
+    <tr>
+      <th>Date Start</th>
+      <td>This is used to specify when the discounted price will become effective. You can leave it empty, which means it starts right away.</td>
+    </tr>
+    <tr>
+      <th>Date End</th>
+      <td>This is used to specify when the discounted price will cease. You can leave it empty, which means there is no end date.</td>
+    </tr>
+  </tbody>
+</table>
+<p class="text-center"><img src="image/catalog/product/product-add-special.png" alt="Product Discount Tab" class="img-thumbnail" /></p>
+<p class="text-center"><small>The product special tab.</small></p>
+<p>In the example below, you can see that the &quot;Camera&quot; product has a special offer assigned to it. This means that the customer will just pay $86 for the product. The original price will be slashed out and displayed on the store front, with the new offer price replacing it.</p>
+<p class="text-center"><img src="image/catalog/product/product-add-special-example.png" alt="Product Special Example" class="img-thumbnail" /></p>
+<p class="text-center"><small>The product configured with a special price will display on the store front with a slash over the old price.</small></p>

@@ -1,12 +1,41 @@
 ---
 layout: default
-title: "Product Options - OpenCart Documentation"
+title: "Product Option Tab - OpenCart Documentation"
 permalink: en-gb/catalog/product/option/
 ---
-<h1>Product Options</h1>
-<h2>Option Tab</h2>
-<p>Options are extra selections that a customer can make on the Product page before adding the product to the shopping cart. Options are first created under Catalog &gt; Options, then assigned to a product that is created under Catalog &gt; Products.</p>
-<p class="text-center"><img src="image/catalog-product-option1.png" alt="adding option choose" class="img-thumbnail" /></p>
-<p>One example of an option is &quot;size&quot;. Begin by typing &quot;size&quot; into the search box. Size should appear in a drop down box. Select it, and click on the green add button. On the right, click &quot;Add Option Value&quot;.</p>
-<p class="text-center"><img src="image/catalog-product-option.png" alt="adding option value" class="img-thumbnail" /></p>
-<p>The Option Values were previously created in the <a href="en-gb/catalog/option/">Options </a>section under Catalog. In this section any option can be added, such as &quot;Large&quot;. To subtract from the quantity every time a product is purchased with this option, you can select &quot;Yes&quot; under &quot;Subtract Stock&quot;. An increase of price can be added to the option value, points, and weight. Click &quot;Add Option Value&quot; to assign that information to that specific option value. You can click &quot;Remove&quot; to erase the option value. See <a href="en-gb/catalog/option/">Options </a>for a more in depth explanation of the options feature.</p>
+<h1>Product Option Tab</h1>
+<p>Options are extra selections that a customer can make on the product page before adding the product to the shopping cart. This could be a size or colour of the product. <a href="en-gb/catalog/option/">Options</a> are first created under Catalog &gt; Options before being assigned to the product.</p>
+<p>Simply type the name of the option you wish to add to this product, and the autocomplete field will appear for you to make a selection. Once selected, the option will be displayed for you to add the option values. Only the select, radio and checkbox type options can have an option value added to it.</p>
+<p class="text-center"><img src="image/catalog/product/product-add-option.png" alt="Product Option Tab" class="img-thumbnail" /></p>
+<p class="text-center"><small>The product option tab.</small></p>
+<p>Once you click on the &quot;Add Option Value&quot; button, a popup with multiple fields will appear for you to fill it up. The fields are explained below. Click on the &quot;Save&quot; button when you are done to close the popup.</p>
+<table class="table table-bordered">
+  <tbody>
+    <tr>
+      <th width="30%">Option Value</th>
+      <td width="*">This is the selection value for the customer to choose from on the product page.</td>
+    </tr>
+    <tr>
+      <th>Quantity</th>
+      <td>This is the available quantity for this option value that you have for customers to purchase.</td>
+    </tr>
+    <tr>
+      <th>Subtract Stock</th>
+      <td>This is similar to the subtract stock field that is available in the &quot;Data&quot; tab. If set to &quot;Yes&quot;, OpenCart will automatically deduct stocks from this option value whenever an order is made.</td>
+    </tr>
+    <tr>
+      <th>Price</th>
+      <td>This is the price adjustment field when this option value is selected. Either add or subtract an amount from the product price.</td>
+    </tr>
+    <tr>
+      <th>Points</th>
+      <td>This is the points adjustment field when this option value is selected. Either add or subtract the points from the product points configured in the rewards tab.</td>
+    </tr>
+    <tr>
+      <th>Weight</th>
+      <td>This is the weight adjustment field when this option value is selected. Either add or subtract the weight from the product weight.</td>
+    </tr>
+  </tbody>
+</table>
+<p class="text-center"><img src="image/catalog/product/product-add-option-value.png" alt="Product Option Value Tab" class="img-thumbnail" /></p>
+<p class="text-center"><small>The product option value tab for adding an option value to the option.</small></p>
