@@ -4,17 +4,82 @@ title: "Information - OpenCart Documentation"
 permalink: en-gb/catalog/information/
 ---
 <h1>Information</h1>
-<h2>Information</h2>
-<p>The Information section displays specific company information in the footer of every page (as seen in the screenshot below). See Information for more information on the footer page.</p>
-<p class="text-center"><img src="image/catalog-information-footer.png" alt="information1" class="img-thumbnail" /></p>
-<p>The Information page can be found under Catalog &gt; Information. On this page the administrator will have the option to edit, delete, or insert a new Information page.</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/SQb6qQ9HL8Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-<div class="alert alert-success" role="alert"><i class="fa  fa-check-circle"></i> About Us, Delivery Information, Privacy Policy, and Terms &amp; Conditions are in the default because they are the most important Information pages used in online stores. We recommend that you edit these pages rather than delete them.</div>
-<p class="text-center"><img src="image/catalog-information-list.png" alt="look info backend" class="img-thumbnail" /></p>
-<p>When editing or inserting these pages a description may be added, pages enabled or disabled, and SEO keywords created. There is an option to remove the page from the bottom of the footer.</p>
-<h3>Information pages in the store front</h3>
-<p>In the screenshot below, the &quot;Delivery Information&quot; page is being edited in the administration under Catalog &gt; Information. The Information Title will display the text entered as the title of that information page, while the description will be placed below.</p>
-<p>The Data tab requires you to check the store that the Information page will be located in, if you have multiple stores. It also asks for a SEO keyword, a status option enabled (or disabled) to make the page public or not, and a sorting order.</p>
-<p class="text-center"><img src="image/catalog-information-insert.png" alt="delivery general" class="img-thumbnail" /></p>
-<p>The screenshot below is the result of saving the edited Delivery Information. A customer can access this page from the footer of any page in the store front by clicking &quot;Delivery Information&quot;. There is an option in the Data tab above to remove a link to this page from the footer.</p>
-<p class="text-center"><img src="image/catalog-information-content.png" alt="delivery front end" class="img-thumbnail" /></p>
+<p>Information is used to provide your customer with details that you think they might need. Information can be pages such as terms and conditions of your store, store address map or any other information that you think may be useful for the customer. Information pages can be displayed at the footer of your website too.</p>
+<h2>Information Listing Page</h2>
+<p>On the information listing page, you will have the option to edit, delete, or insert a new information page.</p>
+<div class="alert alert-success" role="alert"><i class="fa  fa-check-circle"></i> About Us, Delivery Information, Privacy Policy, and Terms &amp; Conditions comes with the default installation because they are the most important information pages used in an online store. We recommend that you edit these pages rather than delete them.</div>
+<img src="image/catalog/filter/information-list.png" alt="Information Listing Page" class="img-thumbnail" />
+<p class="text-center"><small>The page displaying the information pages.</small></p>
+<h2>Create an Information Page</h2>
+<p>You can put just about anything into an information page. The available fields are explained below.</p>
+<h3>General Tab</h3>
+<p>The fields available in the general tab are explained below.</p>
+<table class="table table-bordered">
+  <tbody>
+  <tr>
+    <th width="30%">Information Title *</th>
+    <td width="*">This is the title of the page.</td>
+  </tr>
+  <tr>
+    <th>Description *</th>
+    <td>This is the information page text.</td>
+  </tr>
+  <tr>
+    <th>Meta Tag Title *</th>
+    <td>This is the title of the page which the information page is associated with. This is used by search engine results pages such as Google to display preview snippets of your page.</td>
+  </tr>
+  <tr>
+    <th>Meta Tag Description</th>
+    <td>This would be a short description used by search engines, and will be seen as a short description under their search results.</td>
+  </tr>
+  <tr>
+    <th>Meta Tag Keywords</th>
+    <td>These are keywords used by search engines to rank your page according to relevancy when a customer searches for certain keywords.</td>
+  </tr>
+  <tr>
+    <td colspan="2" class="hints">* Required field</td>
+  </tr>
+  </tbody>
+</table>
+<img src="image/catalog/information/information-add-general.png" alt="Information General Tab" class="img-thumbnail" />
+<p class="text-center"><small>The information General tab.</small></p>
+<h3>Data Tab</h3>
+<p>The fields available in the data tab are explained below.</p>
+<table class="table table-bordered">
+  <tbody>
+  <tr>
+    <th width="30%">Stores</th>
+    <td width="*">This is used to specify which store this information page should be linked to (this only applies when you are managing more than one store with OpenCart&apos;s multi-store feature).</td>
+  </tr>
+  <tr>
+    <th>Bottom</th>
+    <td>This is used to specify whether the information page should appear in the footer of the store front.</td>
+  </tr>
+  <tr>
+    <th>Status</th>
+    <td>This is used to set the status for this information page. Disabling will remove it from the store front.</td>
+  </tr>
+  <tr>
+    <th>Sort Order</th>
+    <td>This allows you to specify the position of the information page displayed on the menu. The value &quot;1&quot; would take precedence as compared to the values &quot;2&quot; or &quot;3&quot;.</td>
+  </tr>
+  </tbody>
+</table>
+<img src="image/catalog/information/information-add-data.png" alt="Information Page Data Tab" class="img-thumbnail" />
+<p class="text-center"><small>The information page General tab.</small></p>
+<h3>SEO Tab</h3>
+<p>This tab is the same as the products and categories SEO tab. It asks for the following information.</p>
+<table class="table table-bordered">
+  <tbody>
+    <tr>
+      <th width="30%">Keyword</th>
+      <td width="*">Assign a unique keyword to make your information page URL search engine friendly. It is recommended that you use all lowercase characters, and replace spaces with a hyphen.</td>
+    </tr>
+  </tbody>
+</table>
+<p class="text-center"><img src="image/catalog/information/information-add-seo.png" alt="Information SEO Tab" class="img-thumbnail" /></p>
+<p class="text-center"><small>The information SEO tab.</small></p>
+<h3>Design Tab</h3>
+<p>The Information design tab is also the same as as the categories design tab. It allows you to configure the &quot;Layout Override&quot; feature. In this feature, you can choose to override a layout, such as using an &quot;Account&quot; page layout for this specific Information page instead of the default &quot;Information&quot; layout. For more information on layouts, see <a href="en-gb/extension/module/">Modules</a>. You can just leave it blank if you do not wish to override the layout.</p>
+<p class="text-center"><img src="image/catalog/information/information-add-design.png" alt="Information Design Tab" class="img-thumbnail" /></p>
+<p class="text-center"><small>The information design tab.</small></p>
