@@ -1,0 +1,44 @@
+---
+layout: default
+title: "SEO Profiles - OpenCart Documentation"
+permalink: en-gb/design/seo/profile/
+---
+<h1>SEO Profiles</h1>
+<p>SEO Profiles are used only when your SEO URL mode is enabled in System &gt; Settings. It is used to rewrite your website's URL to a search engine friendly format. The SEO Profiles created by OpenCart during installation is sufficient for most general purpose use, and third party plugins should add into it whenever necessary. If you need to append additional GET parameter keys for specific URLs, you can add or modify the SEO Profiles here.</p>
+<h2>Creating a SEO Profile</h2>
+<p>Elaborating on how the SEO Profile works, we will make use of the default installed &quot;Product&quot; profile. Below is an explanation of each field.</p>
+<table class="table table-bordered">
+  <tbody>
+  <tr>
+    <th width="30%">Profile Name *</th>
+    <td width="*">This is the name of the profile for internal reference only.</td>
+  </tr>
+  <tr>
+    <th>Key *</th>
+    <td>This is the GET parameter key that OpenCart will look for in the URL.</td>
+  </tr>
+  <tr>
+    <th>Regex</th>
+    <td>Regular expression is used to match the key set above.</td>
+  </tr>
+  <tr>
+    <th>Push</th>
+    <td>If there is a match on the key based on the regular expression above, this information is pushed into the GET parameter of the URL.</td>
+  </tr>
+  <tr>
+    <th>Remove</th>
+    <td>If there is a match on the key based on the regular expression above, this information is removed from the GET parameter of the URL. Comma separated keys are supported.</td>
+  </tr>
+  <tr>
+    <th>Sort Order</th>
+    <td>The order in which the profiles should run to handle the URL.</td>
+  </tr>
+  <tr>
+    <td colspan="2" class="hints">* Required field</td>
+  </tr>
+  </tbody>
+</table>
+<img src="image/design/seo-profile-add.png" alt="SEO Profile Form" class="img-thumbnail" />
+<p class="text-center"><small>The form for adding a new SEO Profile.</small></p>
+<p>Based on the above &quot;Product&quot; profile that comes with the default OpenCart installation, it can be understood that this profile is used to handle the SEO URL for the product page.</p>
+<p>It first checks if the key &quot;product_id&quot; is available in the URL, and then uses regular expression to match for digits in the key value. Once it matches, it will push the route product/product back into the URL, and remove the route and product_id parameters. This allows the URL to be clean and link correctly to the SEO keyword you've set for the correct product.</p>
