@@ -1,19 +1,41 @@
 ---
 layout: default
-title: "Recurring - OpenCart Documentation"
+title: "Recurring Orders - OpenCart Documentation"
 permalink: en-gb/sale/recurring/
 ---
 <h1>Recurring Orders</h1>
-<h2>Recurring Orders</h2>
-<p>Recurring orders are the payments that you as an administrator set for customers that have to be billed on a recurring basis.</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/v4l7ONFqMtU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-<p>They are setup from <strong>Catalog > Recurring Profiles > Add Recurring Profile</strong>.</p>
-<p class="text-center"><img src="../../image/sales-recurring-orders-profile.jpg" alt="Recurring Profile" class="img-thumbnail" /></p>
-<p>To access the <strong>Recurring Orders</strong> section, click on <strong>Sales</strong> as shown in the image below:</p>
-<p class="text-center"><img src="../../image/sales-recurring-orders-dashboard.jpg" alt="OpenCart Dashboard" class="img-thumbnail" /></p>
-<p>This section allows you to filter through the recurring payments that you have set to recurring profiles. For more information about the profiles - <a href="http://docs.opencart.com/catalog/profile/">click here</a>.</p>
-<p class="text-center"><img src="../../image/sales-recurring-orders-filter.jpg" alt="Recurring Orders" class="img-thumbnail" /></p>
-<p><strong>Order ID</strong>: the ID of the order that is associated with the recurring payment.</p>
-<p><strong>Payment Reference</strong>: the ID of the recurring profile in PayPal Express (by default).</p>
-<p><strong>Customer</strong>: your customer’s name in OpenCart.</p>
-<p><strong>Status</strong>: the status of the payment in PayPal.</p>
+<p>Recurring orders are payments that your customers are billed on a recurring basis, dependent on the recurring schedule you've setup.</p>
+<p>You will first need to setup a <a href="en-gb/catalog/recurring-profile/">Recurring Profile</a>. Once setup and a customer makes an order with a recurring profile attached to it, the order information will show up on this page.</p>
+<p>The Recurring Orders page will list the orders with the following information.</p>
+<table class="table table-bordered">
+  <tbody>
+  <tr>
+    <th width="30%">Recurring ID</th>
+    <td width="*">A number OpenCart automatically generates.</td>
+  </tr>
+  <tr>
+    <th>Order ID</th>
+    <td>The order ID this recurring order is associated to.</td>
+  </tr>
+  <tr>
+    <th>Payment Reference</th>
+    <td>The ID of the recurring profile in PayPal Express (by default).</td>
+  </tr>
+  <tr>
+    <th>Customer</th>
+    <td>The name of the customer subscribed to this recurring order in your store.</td>
+  </tr>
+  <tr>
+    <th>Status</th>
+    <td>The status of the payment in PayPal.</td>
+  </tr>
+  <tr>
+    <th>Date Added</th>
+    <td>The date this recurring order was added.</td>
+  </tr>
+  </tbody>
+</table>
+<img src="image/sale/recurring-list.png" alt="Recurring Listing Page" class="img-thumbnail" />
+<p class="text-center"><small>The list of recurring orders.</small></p>
+<h2>Searching Recurring Orders</h2>
+<p>The &quot;Filter&quot; panel on the right helps you find the recurring orders based on the information specified in the search fields. It can help you locate recurring orders by date added, status, associate order ID or even the customer. For more information on the <a href="en-gb/administration/filter/">Filter</a> tool, see Filter.</p>
